@@ -14,6 +14,9 @@ output/scatterplot.png: code/02_make_scatter.R output/data_clean.rds
 output/both_models.rds&output/both_regression_tables.rds: code/03_models.R output/data_clean.rds
 	Rscript code/03_models.R
 
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
 
 .PHONY: clean	
 clean:

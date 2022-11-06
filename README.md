@@ -26,8 +26,11 @@
 `report.Rmd`
 - makes report.html
 
+use "make" in the terminal to make the report
+use "make clean" in the terminal to remove all outputs
+use "make install" in the terminal to synchronize the package repository
 
-# git repository description
+# Git Repository Description
 
 1. Contents in the repository:
 	- raw data in the `raw_data` directory
@@ -43,10 +46,17 @@
 	- `Makefile`
 	- `.gitignore`
 	- the `output` directory but none of its contents (other than `.gitkeep` file)
+	- all of the `renv`-associated files
+	  - `.Rprofile`
+	  - `renv.lock`
+	  - `renv/` folder
+	  - `renv/settings.dcf`
+	  - `renv/activate.R`
+	  - `renv/.gitignore`
 2. The `.gitignore` file ignores:
 	- all `.rds` files and `.png` files in the `output` directory
 	- all `.html` files in the project directory
-3. The `main` branch has 1 commit.
+3. The `main` branch has 2 commit.
 
 
 # Report Description
