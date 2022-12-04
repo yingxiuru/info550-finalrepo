@@ -20,7 +20,7 @@ install:
 clean:
 	rm -f output/*.rds && rm -f output/*.png && rm -f report.html
 
-PROJECTFILES = report.Rmd code/00_clean_data.R code/01_make_table.R code/02_make_scatter.R code/03_models.R code/04_render_report.R raw_data/insurance.csv Makefile README.md .gitignore  
+PROJECTFILES = report.Rmd code/00_clean_data.R code/01_make_table.R code/02_make_scatter.R code/03_render_report.R raw_data/insurance.csv Makefile README.md .gitignore  
 RENVFILES = renv.lock renv/activate.R renv/settings.dcf .Rprofile
 
 project_image: Dockerfile $(PROJECTFILES) $(RENVFILES)
