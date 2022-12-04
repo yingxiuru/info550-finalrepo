@@ -1,4 +1,4 @@
-here::i_am("code/04_render_report.R")
+here::i_am("code/03_render_report.R")
 
 library(rmarkdown)
 # rendering a report in production mode
